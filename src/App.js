@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import SubmitMessage from './components/SubmitMessage';
 
+
 function App() {
 	// Initial state
 	const [errorMessage, seterrorMessage] = useState(null);
@@ -53,6 +54,7 @@ function App() {
 		}}>
 			<div className='form-box'>
 				<h1>Requesting a Loan</h1>
+				
 				<hr></hr>
 
 				<label for='name'>Name :</label>
@@ -81,8 +83,3 @@ function App() {
 
 }
 export default App;
-
-// className={${isButtonDisabled ? 'Disabled' : ''} ${someOtherCondition ? 'another-class' : ''} fixed-class}
-
-// className={fixed-class ${isButtonDisabled ? 'Disabled' : ''} ${someOtherCondition ? 'another-class' : ''}}
-

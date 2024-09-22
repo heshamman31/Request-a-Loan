@@ -1,5 +1,6 @@
 import "./SubmitMessage.css"
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faCircleExclamation} from "@fortawesome/free-solid-svg-icons"
 // export default function SubmitMessage({ isVisibale, errorMessage }) {
 //     if (isVisibale) {
 //         return (
@@ -24,11 +25,7 @@ export default function SubmitMessage({ isVisibale, errorMessage }) {
                             ? "Form submitted successfully"
                             : (
                                 <span>
-                                    <img
-                                        src="/logo192.png"
-                                        alt="logo"
-                                        style={{ width: "20px", marginRight: "10px" }}
-                                    />
+                                    <FontAwesomeIcon style={{marginRight : "10px"}} icon={faCircleExclamation}></FontAwesomeIcon>
                                     {errorMessage}
                                 </span>
                             )}
