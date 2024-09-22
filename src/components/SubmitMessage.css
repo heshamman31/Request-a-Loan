@@ -1,0 +1,13 @@
+.container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.74);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container div {
+    background-color: white;
+    padding: 20px 80px
+}
